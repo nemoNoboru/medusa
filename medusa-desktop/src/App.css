@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+html, body, .App {
+  display: flex;
+  flex: 1;
+  background-color: #383C46;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}

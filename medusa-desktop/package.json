@@ -1,0 +1,40 @@
+{
+  "name": "medusa-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-register": "^6.24.1",
+    "electron": "^1.4.14",
+    "foreman": "^2.0.0",
+    "mocha": "*",
+    "react-scripts": "0.8.5",
+    "should": ">= 0.0.1"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-circular-progressbar": "^0.1.4",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0",
+    "storj-lib": "^6.4.2"
+  },
+  "homepage": "./",
+  "main": "src/electron-starter.js",
+  "scripts": {
+    "start": "nf start -p 3000",
+    "build": "react-scripts build",
+    "test-mocha": "node_modules/.bin/mocha -w",
+    "test": "node_modules/.bin/mocha --compilers js:babel-register  --recursive --no-timeouts",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "electron-start": "node src/electron-wait-react",
+    "react-start": "react-scripts start"
+  },
+  "babel": {
+    "presets": [
+      "stage-3",
+      "latest"
+    ]
+  }
+}
